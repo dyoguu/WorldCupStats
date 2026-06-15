@@ -1,0 +1,23 @@
+{
+  "metric_definitions": {
+    "goals": "Shot events where shot.outcome.name is Goal.",
+    "own_goals": "Own Goal Against events assigned to the team that scored against itself.",
+    "shots": "Shot events.",
+    "passes": "Pass events.",
+    "dribbles": "Dribble events.",
+    "fouls": "Foul Committed events.",
+    "yellow_cards": "Yellow Card and Second Yellow card events found in foul_committed or bad_behaviour.",
+    "red_cards": "Red Card and Second Yellow card events found in foul_committed or bad_behaviour.",
+    "corners": "Pass events where pass.type.name is Corner.",
+    "free_kicks": "Pass events where pass.type.name is Free Kick.",
+    "goal_kicks": "Pass events where pass.type.name is Goal Kick.",
+    "throw_ins": "Pass events where pass.type.name is Throw-in.",
+    "penalty_shots": "Shot events where shot.type.name is Penalty. Used as first version proxy for penalty awarded.",
+    "offsides": "Offside events."
+  },
+  "notes": [
+    "Penalty shots are used instead of penalty awarded because they are directly identifiable from StatsBomb shot events.",
+    "Minute-level data contains only rows where at least one tracked metric exists.",
+    "Raw event-level match detail is loaded directly from StatsBomb Open Data by the frontend."
+  ]
+}
