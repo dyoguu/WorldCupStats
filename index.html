@@ -16,24 +16,77 @@
 
   <main class="container">
     <section class="card">
-      <h2>Data status</h2>
-      <p id="status">Loading competitions...</p>
+      <h2>Filters</h2>
+
+      <div class="filters-grid">
+        <label>
+          Competition
+          <select id="competition-filter"></select>
+        </label>
+
+        <label>
+          Season
+          <select id="season-filter"></select>
+        </label>
+
+        <label>
+          Team
+          <select id="team-filter"></select>
+        </label>
+
+        <label>
+          Last X games
+          <select id="last-x-filter">
+            <option value="all">All games</option>
+            <option value="3">Last 3</option>
+            <option value="5">Last 5</option>
+            <option value="10">Last 10</option>
+            <option value="20">Last 20</option>
+          </select>
+        </label>
+      </div>
+
+      <p id="status">Loading data...</p>
     </section>
 
     <section class="card">
-      <h2>National competitions/seasons</h2>
+      <h2>Average metrics</h2>
+      <p id="summary"></p>
+
       <div class="table-wrapper">
         <table>
           <thead>
             <tr>
-              <th>Competition</th>
-              <th>Season</th>
-              <th>Gender</th>
-              <th>Country</th>
-              <th>Match available</th>
+              <th>Metric</th>
+              <th>Total</th>
+              <th>Average per match</th>
             </tr>
           </thead>
-          <tbody id="competitions-table-body"></tbody>
+          <tbody id="metrics-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Matches used in calculation</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Competition</th>
+              <th>Season</th>
+              <th>Team</th>
+              <th>Opponent</th>
+              <th>Home/Away</th>
+              <th>Goals</th>
+              <th>Shots</th>
+              <th>Passes</th>
+              <th>Fouls</th>
+            </tr>
+          </thead>
+          <tbody id="matches-table-body"></tbody>
         </table>
       </div>
     </section>
