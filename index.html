@@ -17,79 +17,30 @@
   <main class="container">
     <section class="card">
       <h2>Filters</h2>
+      <p class="help-text">Select one or more values. Keep “All” selected to include everything.</p>
 
       <div class="filters-grid">
-        <label>
-          Competition
-          <select id="competition-filter"></select>
-        </label>
-
-        <label>
-          Season
-          <select id="season-filter"></select>
-        </label>
-
-        <label>
-          Team
-          <select id="team-filter"></select>
-        </label>
-
-        <label>
-          Last X games
-          <select id="last-x-filter">
-            <option value="all">All games</option>
-            <option value="3">Last 3</option>
-            <option value="5">Last 5</option>
-            <option value="10">Last 10</option>
-            <option value="20">Last 20</option>
-          </select>
-        </label>
+        <label>Competition<select id="competition-filter" multiple size="5"></select></label>
+        <label>Season<select id="season-filter" multiple size="5"></select></label>
+        <label>Team<select id="team-filter" multiple size="8"></select></label>
+        <label>Last X games<select id="last-x-filter"><option value="all">All games</option><option value="3">Last 3</option><option value="5">Last 5</option><option value="10">Last 10</option><option value="20">Last 20</option><option value="30">Last 30</option></select></label>
+        <label>Period<select id="period-filter" multiple size="6"><option value="all" selected>All</option><option value="1">1st half</option><option value="2">2nd half</option><option value="3">Extra time 1</option><option value="4">Extra time 2</option><option value="5">Penalty shootout</option></select></label>
+        <label>Minute start<input id="minute-start" type="number" min="0" max="130" value="0" /></label>
+        <label>Minute end<input id="minute-end" type="number" min="0" max="130" value="130" /></label>
+        <label>Analysis grain<select id="grain-filter"><option value="whole_match">Whole match</option><option value="minute_range">Period/minute range</option></select></label>
       </div>
-
       <p id="status">Loading data...</p>
     </section>
 
-    <section class="card">
-      <h2>Average metrics</h2>
-      <p id="summary"></p>
+    <section class="kpi-grid" id="kpi-grid"></section>
 
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Metric</th>
-              <th>Total</th>
-              <th>Average per match</th>
-            </tr>
-          </thead>
-          <tbody id="metrics-table-body"></tbody>
-        </table>
-      </div>
-    </section>
+    <section class="card"><h2>Average metrics</h2><p id="summary"></p><div class="table-wrapper"><table><thead><tr><th>Metric</th><th>Total</th><th>Average per team-match</th></tr></thead><tbody id="metrics-table-body"></tbody></table></div></section>
 
-    <section class="card">
-      <h2>Matches used in calculation</h2>
+    <section class="card"><h2>Team comparison</h2><div class="table-wrapper"><table><thead id="comparison-table-head"></thead><tbody id="comparison-table-body"></tbody></table></div></section>
 
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Competition</th>
-              <th>Season</th>
-              <th>Team</th>
-              <th>Opponent</th>
-              <th>Home/Away</th>
-              <th>Goals</th>
-              <th>Shots</th>
-              <th>Passes</th>
-              <th>Fouls</th>
-            </tr>
-          </thead>
-          <tbody id="matches-table-body"></tbody>
-        </table>
-      </div>
-    </section>
+    <section class="card"><h2>Matches used in calculation</h2><div class="table-wrapper"><table><thead><tr><th>Date</th><th>Competition</th><th>Season</th><th>Team</th><th>Opponent</th><th>Home/Away</th><th>Goals</th><th>Shots</th><th>Passes</th><th>Fouls</th><th>Detail</th></tr></thead><tbody id="matches-table-body"></tbody></table></div></section>
+
+    <section class="card"><h2>Match detail / raw event explorer</h2><p class="help-text">This section fetches raw event data directly from StatsBomb Open Data when you click a match.</p><div id="match-detail">Select a match from the table above.</div></section>
   </main>
 
   <script src="./js/app.js"></script>

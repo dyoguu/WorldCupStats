@@ -1,2 +1,1 @@
-# No external dependencies required for the first version.
-# The script currently uses only the Python standard library.
+# No external dependencies required. The script uses Python standard library only.
