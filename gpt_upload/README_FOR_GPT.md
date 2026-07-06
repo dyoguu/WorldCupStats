@@ -22,7 +22,7 @@ One row per team per match.
 
 Use for whole-match analytics, team comparisons, last-X-games analysis, and average metrics.
 
-Rows: 1024
+Rows: 1018
 
 ### `team_match_minute_stats.csv`
 
@@ -30,7 +30,7 @@ One row per team, match, period, and minute where at least one tracked metric oc
 
 Use for period and minute-range questions.
 
-Rows: 101306
+Rows: 100736
 
 ### `data_dictionary.md`
 
