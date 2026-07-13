@@ -807,6 +807,8 @@ match_id,competition_id,season_id,competition_name,season_name,match_date,team,o
 3930162,55,282,UEFA Euro,2024,2024-06-16,Slovenia,Denmark,home,1,0,11,343,7,13,2,0,5,10,9,14,0,0
 3930163,55,282,UEFA Euro,2024,2024-06-16,England,Serbia,away,1,0,5,618,12,12,0,0,1,18,5,8,0,0
 3930163,55,282,UEFA Euro,2024,2024-06-16,Serbia,England,home,0,0,6,548,6,28,2,0,2,9,4,19,0,0
+3938637,55,282,UEFA Euro,2024,2024-06-16,Netherlands,Poland,away,2,0,21,631,18,8,1,0,6,12,2,29,0,0
+3938637,55,282,UEFA Euro,2024,2024-06-16,Poland,Netherlands,home,1,0,12,324,12,10,0,0,3,8,15,13,0,0
 3930164,55,282,UEFA Euro,2024,2024-06-17,Belgium,Slovakia,home,0,0,16,601,10,15,3,0,5,11,6,18,0,0
 3930164,55,282,UEFA Euro,2024,2024-06-17,Slovakia,Belgium,away,1,0,10,399,6,13,1,0,7,16,10,19,0,0
 3930165,55,282,UEFA Euro,2024,2024-06-17,Austria,France,home,0,1,5,529,10,23,5,0,6,11,6,18,0,0
@@ -863,6 +865,8 @@ match_id,competition_id,season_id,competition_name,season_name,match_date,team,o
 3939973,223,282,Copa America,2024,2024-06-24,Uruguay,Panama,home,3,0,20,448,9,17,0,0,9,10,9,23,0,0
 3939975,223,282,Copa America,2024,2024-06-24,Colombia,Paraguay,home,2,0,11,561,17,10,1,0,3,20,10,13,0,0
 3939975,223,282,Copa America,2024,2024-06-24,Paraguay,Colombia,away,1,0,11,291,18,20,2,0,3,10,9,23,0,1
+3930180,55,282,UEFA Euro,2024,2024-06-25,Austria,Netherlands,away,2,0,9,428,10,16,3,0,2,11,10,16,0,0
+3930180,55,282,UEFA Euro,2024,2024-06-25,Netherlands,Austria,home,2,1,11,488,17,14,0,0,5,17,5,26,0,0
 3930181,55,282,UEFA Euro,2024,2024-06-25,England,Slovenia,home,0,0,12,790,10,12,3,0,6,8,5,17,0,0
 3930181,55,282,UEFA Euro,2024,2024-06-25,Slovenia,England,away,0,0,4,295,5,10,2,0,0,13,11,12,0,0
 3930182,55,282,UEFA Euro,2024,2024-06-25,Denmark,Serbia,home,0,0,10,599,11,14,2,0,8,8,4,15,0,0
@@ -899,6 +903,8 @@ match_id,competition_id,season_id,competition_name,season_name,match_date,team,o
 3940878,55,282,UEFA Euro,2024,2024-06-29,Switzerland,Italy,home,2,0,16,561,8,11,0,0,4,15,6,18,0,0
 3940983,55,282,UEFA Euro,2024,2024-06-29,Denmark,Germany,away,0,0,10,475,8,18,2,0,6,10,6,10,0,1
 3940983,55,282,UEFA Euro,2024,2024-06-29,Germany,Denmark,home,2,0,15,575,14,7,0,0,6,15,3,20,1,0
+3939985,223,282,Copa America,2024,2024-06-30,Canada,Chile,home,0,0,9,473,16,16,5,0,8,8,7,19,0,0
+3939985,223,282,Copa America,2024,2024-06-30,Chile,Canada,away,0,0,8,364,12,8,2,1,4,15,8,29,0,1
 3939986,223,282,Copa America,2024,2024-06-30,Argentina,Peru,home,2,0,12,667,13,14,1,0,6,19,5,18,1,0
 3939986,223,282,Copa America,2024,2024-06-30,Peru,Argentina,away,0,0,7,250,13,24,5,0,3,14,5,23,0,0
 3941017,55,282,UEFA Euro,2024,2024-06-30,England,Slovakia,home,2,0,16,872,17,13,3,0,9,20,11,24,0,0
